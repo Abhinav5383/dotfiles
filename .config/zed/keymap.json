@@ -1,0 +1,16 @@
+[
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-j": "terminal_panel::ToggleFocus",
+			"alt-shift-up": "editor::DuplicateLineUp",
+			"alt-shift-down": "editor::DuplicateLineDown"
+		}
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-b": "workspace::ToggleLeftDock"
+		}
+	}
+]
