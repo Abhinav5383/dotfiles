@@ -122,7 +122,6 @@ export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
-eval `dircolors ~/.dir_colors`
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
