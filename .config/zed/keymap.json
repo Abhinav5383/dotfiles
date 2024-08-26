@@ -2,6 +2,8 @@
 	{
 		"context": "Editor",
 		"bindings": {
+			"ctrl-d": ["editor::SelectNext", { "replace_newest": false }],
+			"ctrl-shift-d": ["editor::SelectPrevious", { "replace_newest": false }],
 			"ctrl-j": "terminal_panel::ToggleFocus",
 			"alt-shift-up": "editor::DuplicateLineUp",
 			"alt-shift-down": "editor::DuplicateLineDown"

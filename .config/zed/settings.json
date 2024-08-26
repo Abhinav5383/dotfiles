@@ -5,10 +5,10 @@
 	"vim_mode": false,
 	"theme": "Monospace dark",
 	"base_keymap": "VSCode",
-	"ui_font_size": 16,
-	"buffer_font_size": 16,
+	"ui_font_size": 18,
+	"buffer_font_size": 17,
 	"buffer_font_family": "JetBrainsMono Nerd Font Mono",
-	"ui_font_family": "JetBrainsMono Nerd Font Mono",
+	"ui_font_family": "Cantarell",
 	"tab_size": 4,
 	"remove_trailing_whitespace_on_save": true,
 	"format_on_save": "on",
@@ -33,13 +33,17 @@
 	},
 
 	"features": {
-		"copilot": false
+		"copilot": true
 	},
 
 	"assistant": {
-		"enabled": false,
-		"version": "1",
-		"button": false
+		"default_model": {
+			"provider": "copilot_chat",
+			"model": "gpt-4o"
+		},
+		"enabled": true,
+		"version": "2",
+		"button": true
 	},
 	"chat_panel": {
 		"button": false

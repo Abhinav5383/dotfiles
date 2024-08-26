@@ -116,7 +116,7 @@ alias ls="eza --tree --icons --level 1"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$BUN_INSTALL/bin:/home/abhinav/go/bin:$PATH"
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
 
 . "$HOME/.atuin/bin/env"
