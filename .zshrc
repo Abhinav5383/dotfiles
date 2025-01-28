@@ -116,8 +116,9 @@ alias ls="eza --tree --icons --level 1"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:/home/abhinav/go/bin:$PATH"
+export PATH="$BUN_INSTALL/bin:/home/abhinav/go/bin:/home/abhinav/.local/bin:$PATH"
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
+export EDITOR=helix
 
 . "$HOME/.atuin/bin/env"
 
@@ -130,3 +131,4 @@ eval "$(atuin init zsh)"
 export GTK_IM_MODULE='ibus'
 export QT_IM_MODULE='ibus'
 export XMODIFIERS='@im=ibus'
+export TERM='xterm-256color'

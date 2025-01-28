@@ -5,37 +5,31 @@
 	"vim_mode": false,
 	"theme": "Monospace dark",
 	"base_keymap": "VSCode",
-	"ui_font_size": 18,
-	"buffer_font_size": 17,
 	"buffer_font_family": "JetBrainsMono Nerd Font Mono",
-	"ui_font_family": "Cantarell",
+	"buffer_font_size": 18,
+	"buffer_font_weight": 400,
+	"ui_font_family": "Inter",
+	"ui_font_size": 18,
+	"ui_font_weight": 400,
 	"tab_size": 4,
 	"remove_trailing_whitespace_on_save": true,
 	"format_on_save": "on",
-
 	"terminal": {
 		"font_family": "JetBrainsMono Nerd Font Mono"
 	},
-
-	"lsp": {
-		"biome": {
-			"settings": {
-				"config_path": "./biome.json"
-			}
-		}
-	},
-
 	"formatter": {
-		"external": {
-			"command": "biome",
-			"arguments": ["format", "--write", "--stdin-file-path={buffer_path}"]
+		"language_server": {
+			"name": "biome"
 		}
 	},
-
+	"languages": {
+		"CSS": {
+			"formatter": "auto"
+		}
+	},
 	"features": {
 		"copilot": true
 	},
-
 	"assistant": {
 		"default_model": {
 			"provider": "copilot_chat",
@@ -50,5 +44,9 @@
 	},
 	"collaboration_panel": {
 		"button": false
+	},
+	"code_actions_on_format": {
+		"source.fixAll.biome": true,
+		"source.organizeImports.biome": true
 	}
 }

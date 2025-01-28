@@ -15,5 +15,5 @@ Steps to install the dotfiles
 - ### Use GNU Stow to create symlinks
     ```
     $ cd dotfiles
-    $ stow .
+    $ stow ./
     ```
