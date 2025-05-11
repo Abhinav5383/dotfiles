@@ -1,0 +1,33 @@
+# "$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
+format = """\
+  $directory \n$character\n\n\n
+"""
+right_format = """
+"""
+
+continuation_prompt = '▶▶ '
+
+# style_choices:
+# bold
+# italic
+# underline
+# dimmed
+# inverted
+# blink
+# hidden
+# strikethrough
+# bg:<color>
+# fg:<color>
+# <color>
+# none
+
+#NTOE: you can customize the symbol(s, e.g:
+# [character]
+# success_symbol = "[  ]($bold fg:#f8f8f2)"
+# error_symbol = "[ ➤ ]($bold fg:#fb4934)"
+
+[directory]
+disabled = false
+format = "[ $path ](fg:#181825 bg:#89B5FB)[\uE0B0](bg:#00000000 fg:#89B5FB)"
+truncate_to_repo = false

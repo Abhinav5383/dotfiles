@@ -11,6 +11,7 @@ Packages required for installation
 
 ## Installation
 Steps to install the dotfiles
+- ### Install [HyDE](https://github.com/HyDE-Project/HyDE)
 - ### Clone the repo
 - ### Use GNU Stow to create symlinks
     ```

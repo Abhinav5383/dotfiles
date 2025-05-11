@@ -6,7 +6,9 @@
 			"ctrl-shift-d": ["editor::SelectPrevious", { "replace_newest": false }],
 			"ctrl-j": "terminal_panel::ToggleFocus",
 			"alt-shift-up": "editor::DuplicateLineUp",
-			"alt-shift-down": "editor::DuplicateLineDown"
+			"alt-shift-down": "editor::DuplicateLineDown",
+			"ctrl-shift-up": "editor::AddSelectionAbove",
+			"ctrl-shift-down": "editor::AddSelectionBelow"
 		}
 	},
 	{
