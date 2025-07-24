@@ -1,35 +1,54 @@
-# Add user configurations here
-# For HyDE to not touch your beloved configurations,
-# we added 2 files to the project structure:
-# 1. ~/.hyde.zshrc - for customizing the shell related hyde configurations
-# 2. ~/.zshenv - for updating the zsh environment variables handled by HyDE // this will be modified across updates
-
-#  Plugins 
-# oh-my-zsh plugins are loaded  in ~/.hyde.zshrc file, see the file for more information
-
-#  Aliases 
-# Add aliases here
-
-#  This is your file 
-# Add your configurations here
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-
-export PATH="$BUN_INSTALL/bin:/home/abhinav/go/bin:/home/abhinav/.local/bin:/home/abhinav/.cargo/bin:$PATH"
-export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
-export EDITOR=helix
-
 eval "$(atuin init zsh)"
 
-# IBUS cofig
-export GTK_IM_MODULE='ibus'
-export QT_IM_MODULE='ibus'
-export XMODIFIERS='@im=ibus'
-export TERM='xterm-256color'
-export VDPAU_DRIVER='va_gl'
-export LIBVA_DRIVER_NAME='iHD'
-# export BRAVE_FLAGS=$(cat ~/.config/chromium-flags.conf)
-export BAT_THEME="Dracula"
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored
+zstyle ':completion:*' file-sort name
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '' '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' menu select=long
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle ':completion:*' squeeze-slashes true
+zstyle :compinstall filename '/home/abhinav/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+# HISTFILE=~/.histfile
+# HISTSIZE=1000
+# SAVEHIST=1000
+# setopt autocd notify
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
+export QT_QPA_PLATFORMTHEME=qt6ct
+export ANV_DEBUG=video-decode,video-encode
+export GTK_USE_PORTAL=1
+
+alias ls="eza -aG --icons --level=1 --group-directories-first"
+alias ll="eza -alT --icons --level=1 --group-directories-last"
 
 
+eval "$(starship init zsh)"
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# Control keys remap
+
+autoload zkbd
+[[ ! -f ${ZDOTDIR:-$HOME}/.zkbd/xterm-kitty-:0 ]] && zkbd
+source ${ZDOTDIR:-$HOME}/.zkbd/xterm-kitty-:0
+
+[[ -n ${key[Backspace]} ]] && bindkey "${key[Backspace]}" backward-delete-char
+[[ -n ${key[Insert]} ]] && bindkey "${key[Insert]}" overwrite-mode
+[[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
+[[ -n ${key[PageUp]} ]] && bindkey "${key[PageUp]}" up-line-or-history
+[[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
+[[ -n ${key[End]} ]] && bindkey "${key[End]}" end-of-line
+[[ -n ${key[PageDown]} ]] && bindkey "${key[PageDown]}" down-line-or-history
+[[ -n ${key[Up]} ]] && bindkey "${key[Up]}" up-line-or-search
+[[ -n ${key[Left]} ]] && bindkey "${key[Left]}" backward-char
+[[ -n ${key[Down]} ]] && bindkey "${key[Down]}" down-line-or-search
+[[ -n ${key[Right]} ]] && bindkey "${key[Right]}" forward-char

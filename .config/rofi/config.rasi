@@ -1,0 +1,7 @@
+
+* {
+    font: "JetBrains Mono Nerd Font Mono 14";
+}
+
+@theme "./launcher.rasi"
+
