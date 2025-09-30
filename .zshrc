@@ -16,21 +16,26 @@ compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt autocd notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-export QT_QPA_PLATFORMTHEME=qt6ct
+export EDITOR=helix
 export ANV_DEBUG=video-decode,video-encode
-export GTK_USE_PORTAL=1
+export TERM='xterm-256color'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --strip-cwd-prefix'
+
+export PATH="$HOME/flutter/bin:$HOME/go/bin:$PATH"
 
 alias ls="eza -aG --icons --level=1 --group-directories-first"
 alias ll="eza -alT --icons --level=1 --group-directories-last"
-
+alias hx="helix"
+alias shx="sudo -E helix"
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
