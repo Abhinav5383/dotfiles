@@ -48,7 +48,7 @@ inputbar {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               100%;
+    border-radius:               0px;
     border-color:                @selected;
     background-color:            @background-alt;
     text-color:                  @foreground;
@@ -58,7 +58,7 @@ inputbar {
 prompt {
     enabled:                     true;
     padding:                     15px;
-    border-radius:               100%;
+    border-radius:               0px;
     background-color:            @selected;
     text-color:                  @background;
 }
@@ -134,7 +134,7 @@ element selected.normal {
 }
 element-icon {
     padding:                     30px;
-    border-radius:               20px;
+    border-radius:               0px;
     background-color:            @background-alt;
     text-color:                  inherit;
     size:                        64px;
@@ -150,7 +150,7 @@ element-text {
     horizontal-align:            0.5;
 }
 element-text selected {
-    border-radius:               100%;
+    border-radius:               0px;
     background-color:            @selected;
     text-color:                  @background;
 }
@@ -159,7 +159,7 @@ element-text selected {
 error-message {
     padding:                     20px;
     border:                      2px solid;
-    border-radius:               20px;
+    border-radius:               0px;
     border-color:                @selected;
     background-color:            @background;
     text-color:                  @foreground;
