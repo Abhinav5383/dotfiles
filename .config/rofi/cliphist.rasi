@@ -10,10 +10,8 @@ configuration {
 
 // Main //
 window {
-    width:                       23em;
-    height:                      30em;
     transparency:                "none";
-    fullscreen:                  false;
+    fullscreen:                  true;
     enabled:                     true;
     cursor:                      "default";
     spacing:                     0em;
@@ -64,9 +62,9 @@ listbox {
 }
 listview {
     enabled:                     true;
-    padding:                     0.5em;
-    columns:                     1;
-    lines:                       11; 
+    padding:                     0em;
+    columns:                     2;
+    lines:                       14; 
     cycle:                       true;
     fixed-height:                true;
     fixed-columns:               false;
