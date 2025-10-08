@@ -1,0 +1,103 @@
+// Credits: github.com/HyDE-Project/HyDE // 
+
+// Config //
+configuration {
+    modi:                        "drun";
+    show-icons:                  false;
+}
+
+@import                          "colors/catppuccin.rasi"
+
+// Main //
+window {
+    width:                       23em;
+    height:                      30em;
+    transparency:                "none";
+    fullscreen:                  false;
+    enabled:                     true;
+    cursor:                      "default";
+    spacing:                     0em;
+    padding:                     0em;
+    border:                      1px solid;
+    border-color:                @selected;
+    background-color:            @background;
+}
+mainbox {
+    enabled:                     true;
+    spacing:                     0em;
+    padding:                     0.5em;
+    orientation:                 vertical;
+    children:                    [ "wallbox" , "listbox" ];
+    background-color:            transparent;
+}
+wallbox {
+    spacing:                     0em;
+    padding:                     0em;
+    expand:                      false;
+    orientation:                 horizontal;
+    children:                    [ "inputbar" ];
+}
+
+// Inputs //
+inputbar {
+    enabled:                     true;
+    padding:                     0em;
+    children:                    [ "entry" ];
+    background-color:            @background-alt;
+    expand:                      true;
+}
+entry {
+    enabled:                     true;
+    padding:                     1em;
+    text-color:                  @foreground;
+    background-color:            transparent;
+}
+
+
+// Lists //
+listbox {
+    spacing:                     0em;
+    padding:                     0em;
+    orientation:                 vertical;
+    children:                    [ "dummy" , "listview" , "dummy" ];
+    background-color:            transparent;
+}
+listview {
+    enabled:                     true;
+    padding:                     0.5em;
+    columns:                     1;
+    lines:                       11; 
+    cycle:                       true;
+    fixed-height:                true;
+    fixed-columns:               false;
+    expand:                      false;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+dummy {
+    spacing:                     0em;
+    padding:                     0em;
+    background-color:            transparent;
+}
+
+
+// Elements //
+element {
+    enabled:                     true;
+    padding:                     0.5em;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+element selected.normal {
+    background-color:            @selected;
+    text-color:                  #000000;
+}
+element-text {
+    vertical-align:              0.0;
+    horizontal-align:            0.0;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}

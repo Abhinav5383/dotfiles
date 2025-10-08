@@ -1,5 +1,3 @@
-eval "$(atuin init zsh)"
-
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored
@@ -29,6 +27,7 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --strip-cwd-prefix'
 
 export PATH="$HOME/flutter/bin:$HOME/go/bin:$PATH"
 
+alias cd="z"
 alias ls="eza -aG --icons --level=1 --group-directories-first"
 alias ll="eza -alT --icons --level=1 --group-directories-last"
 alias hx="helix"
@@ -36,13 +35,14 @@ alias shx="sudo -E helix"
 alias peaclock="peaclock --config-dir ~/.config/peaclock"
 
 eval "$(starship init zsh)"
+eval "$(atuin init zsh)"
 eval "$(zoxide init zsh)"
+
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 # Control keys remap
-
 autoload zkbd
 [[ ! -f ${ZDOTDIR:-$HOME}/.zkbd/xterm-kitty-:0 ]] && zkbd
 source ${ZDOTDIR:-$HOME}/.zkbd/xterm-kitty-:0
