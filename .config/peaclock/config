@@ -1,0 +1,7 @@
+timer-exec 'notify-send -a peaclock "timer complete"'
+
+mode clock
+view digital
+set auto-size off
+
+style background #000
