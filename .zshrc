@@ -25,7 +25,7 @@ export ANV_DEBUG=video-decode,video-encode
 export TERM='xterm-256color'
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --strip-cwd-prefix'
 
-export PATH="$HOME/flutter/bin:$HOME/go/bin:$PATH"
+export PATH="$HOME/.platform-tools:$HOME/go/bin:$PATH"
 
 alias cd="z"
 alias ls="eza -aG --icons --level=1 --group-directories-first"

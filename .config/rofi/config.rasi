@@ -1,6 +1,6 @@
 
 * {
-    font: "JetBrains Mono Nerd Font Mono 14";
+    font: "Monaspace Neon NF 14";
 }
 
 @theme "./launcher.rasi"

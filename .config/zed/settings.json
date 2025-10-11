@@ -1,7 +1,7 @@
 {
 	"theme": "Monospace dark",
 	"ui_font_family": "DejaVu Sans",
-	"buffer_font_family": "Monaspace Neon",
+	"buffer_font_family": "Monaspace Neon NF",
 	"buffer_font_features": {
 		"calt": true,
 		"ss01": true,
