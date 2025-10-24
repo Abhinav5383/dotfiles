@@ -1,7 +1,20 @@
 {
+	"show_edit_predictions": false,
+	"features": {
+		"edit_prediction_provider": null
+	},
+	"base_keymap": "VSCode",
+	"file_types": {},
+	"hard_tabs": false,
 	"theme": "Monospace dark",
-	"ui_font_family": "DejaVu Sans",
+	"icon_theme": "Material Icon Theme",
+	"ui_font_family": "Noto Sans",
+	"ui_font_size": 18,
 	"buffer_font_family": "Monaspace Neon NF",
+	"buffer_font_size": 18,
+	"buffer_line_height": {
+		"custom": 1.37
+	},
 	"buffer_font_features": {
 		"calt": true,
 		"ss01": true,
@@ -15,18 +28,32 @@
 		"ss09": true,
 		"liga": true
 	},
-	"icon_theme": "Material Icon Theme",
+	"terminal": {
+		"font_size": 18,
+		"font_family": "Monaspace Neon NF",
+		"line_height": {
+			"custom": 1.4
+		}
+	},
 	"telemetry": {
 		"metrics": false,
 		"diagnostics": false
 	},
-	"ui_font_size": 15,
-	"buffer_font_size": 14,
 	"toolbar": {
 		"agent_review": false,
 		"breadcrumbs": false,
 		"quick_actions": false,
 		"selections_menu": false
+	},
+	"tab_bar": {
+		"show_nav_history_buttons": false
+	},
+	"tabs": {
+		"file_icons": true,
+		"git_status": true
+	},
+	"minimap": {
+		"show": "never"
 	},
 	"tab_size": 4,
 	"git": {
@@ -38,7 +65,13 @@
 		"source.fixAll": true,
 		"source.organizeImports": true
 	},
-	"language_servers": ["biome", "!vtsls", "..."],
+	"language_servers": [
+		"biome",
+		"!vtsls",
+		"!eslint",
+		"!typescript-language-server",
+		"..."
+	],
 	"formatter": {
 		"language_server": {
 			"name": "biome"
@@ -55,7 +88,8 @@
 			"formatter": "language_server"
 		},
 		"TSX": {
-			"formatter": "language_server"
+			"formatter": "language_server",
+			"language_servers": ["vtsls"]
 		},
 		"CSS": {
 			"formatter": "auto"

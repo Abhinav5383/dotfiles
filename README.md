@@ -2,50 +2,136 @@
 
 ## Packages
 
-### Core
-- hyprland
-- hypridle
-- hyprlock
-- hyprpaper
-- hyprpicker
-- rofi-wayland
-- waybar
-- swayosd
-- swaync
-- grim
-- satty
-- kitty
-- hyprpolkitagent
-- gnome-keyring
-- polkit
-- sddm
-- qt5-wayland, qt6-wayland
-- gtk2, gtk3, gtk4
-- xdg-desktop-portal-wayland
-- xdg-desktop-portal-gtk
+### Base packages
 
-### Themes
-- qt5ct, qt6ct (tip: If qt5ct doesn't list the theme just copy the config from qt6ct and rename the file inside to `qt5ct.conf`)
-- nwg-look
-- kvantum
-- breeze-gtk
-- catppuccin-gtk-theme-mocha
-- bibata-cursor-theme
-- morwaita
+7zip
+alsa-utils
+base
+base-devel
+bat
+blueman
+bluez
+bluez-utils
+brightnessctl
+chaotic-keyring
+chaotic-mirrorlist
+clang
+cliphist
+dosfstools
+efibootmgr
+eza
+fd
+fzf
+gdb
+git
+github-cli
+gnome-keyring
+grim
+gst-plugin-pipewire
+gtk2
+gtk4
+gvfs-mtp
+helix
+hypridle
+hyprland
+hyprlock
+hyprpaper
+hyprpicker
+hyprpolkitagent
+intel-gpu-tools
+intel-media-driver
+intel-ucode
+kitty
+kvantum
+kvantum-qt5
+less
+libpulse
+libva-utils
+linux
+linux-firmware-intel
+linux-firmware-other
+linux-firmware-whence
+networkmanager
+noto-color-emoji-fontconfig
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+nwg-look
+otf-monaspace-nerdfonts
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+qt5-wayland
+qt5ct
+qt6-wayland
+qt6ct-kde
+rofi
+rust
+satty
+sof-firmware
+starship
+stow
+swaync
+swayosd
+ttf-jetbrains-mono-nerd
+ttf-material-design-icons-extended
+ttf-nerd-fonts-symbols-mono
+udiskie
+vpl-gpu-rt
+vulkan-headers
+vulkan-intel
+wireplumber
+wl-clipboard
+woff2-font-awesome
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
+yay
+yazi
+zoxide
+zram-generator
+zsh
 
-### General programs
-- zsh
-- bat
-- eza
-- nautilus
-- brave
-- zed
-- helix
-- vscode
-- vlc-git
-- fastfetch
-- stow
-- pavucontroll
-- blueman, bluez
-- yt-dlp, media-downloader, python-mutagen
-- yazi
+
+### Extras
+
+android-file-transfer
+atuin
+biome
+brave-bin
+btop
+bun-bin
+chromium
+fastfetch
+flatpak
+go
+heroic-games-launcher-bin
+jdk24-openjdk
+man-db
+man-pages
+nautilus
+pavucontrol
+pm2
+python-pillow
+qbittorrent
+reflector
+rsync
+stremio
+tldr
+valkey
+ventoy-bin
+visual-studio-code-bin
+vlc
+vlc-plugin-ffmpeg
+vlc-plugin-matroska
+vlc-plugin-mtp
+vlc-plugin-x264
+vlc-plugin-x265
+yt-dlp
+zed
+
+### AUR
+apple_cursor
+catppuccin-gtk-theme-mocha
+wl-screenrec
+peaclock

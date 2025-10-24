@@ -20,10 +20,11 @@ setopt autocd notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
+
 export EDITOR=helix
-export ANV_DEBUG=video-decode,video-encode
-export TERM='xterm-256color'
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --strip-cwd-prefix'
+export ANV_DEBUG="video-decode,video-encode"
+export TERM="xterm-256color"
+export FZF_DEFAULT_COMMAND="fd --type f --hidden --strip-cwd-prefix"
 
 export PATH="$HOME/.platform-tools:$HOME/go/bin:$PATH"
 
