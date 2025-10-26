@@ -1,5 +1,7 @@
 # Hyprland dotfiles
 
+NOTE FOR MYSELF: add the `snd_soc_sof_es8336.quirk=128` kernel parameter to make sound work.
+
 ## Packages
 
 ### Base packages
