@@ -124,14 +124,18 @@ tldr
 valkey
 ventoy-bin
 visual-studio-code-bin
-vlc
-vlc-plugin-ffmpeg
-vlc-plugin-matroska
-vlc-plugin-mtp
-vlc-plugin-x264
-vlc-plugin-x265
 yt-dlp
 zed
+
+### VLC Stuff
+vlc
+vlc-plugin-ffmpeg
+vlc-plugin-freetype
+vlc-plugin-matroska
+vlc-plugin-mtp
+vlc-plugin-srt
+vlc-plugin-x264
+vlc-plugin-x265
 
 ### AUR
 apple_cursor

@@ -68,7 +68,6 @@
 
     "languages": {
         "HTML": {
-            "formatter": { "language_server": { "name": "biome" } },
             "language_servers": [
                 "vscode-html-language-server",
                 "emmet-language-server",
@@ -102,7 +101,6 @@
             ]
         },
         "JSON": {
-            "formatter": { "language_server": { "name": "biome" } },
             "language_servers": ["json-language-server", "biome"]
         }
     },
