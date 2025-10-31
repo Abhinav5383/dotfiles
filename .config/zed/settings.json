@@ -81,13 +81,14 @@
         },
         "TypeScript": {
             "formatter": { "language_server": { "name": "biome" } },
-            "language_servers": ["tsgo", "biome"]
+            "language_servers": ["vtsls", "biome"]
         },
         "TSX": {
             "formatter": { "language_server": { "name": "biome" } },
             "language_servers": [
                 "vtsls",
                 "tailwindcss-language-server",
+                "emmet-language-server",
                 "biome"
             ]
         },

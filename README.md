@@ -112,6 +112,7 @@ jdk24-openjdk
 man-db
 man-pages
 nautilus
+ncdu
 pavucontrol
 pm2
 python-pillow
