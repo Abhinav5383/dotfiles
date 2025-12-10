@@ -53,6 +53,7 @@ linux
 linux-firmware-intel
 linux-firmware-other
 linux-firmware-whence
+linux-headers
 networkmanager
 noto-color-emoji-fontconfig
 noto-fonts-cjk

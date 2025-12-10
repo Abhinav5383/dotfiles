@@ -1,4 +1,8 @@
 {
+    "disable_ai": true,
+    "inlay_hints": {
+        "enabled": false
+    },
     "show_edit_predictions": false,
     "features": {
         "edit_prediction_provider": null
@@ -12,7 +16,7 @@
     "buffer_font_family": "Monaspace Neon NF",
     "buffer_font_size": 18,
     "buffer_line_height": {
-        "custom": 1.37
+        "custom": 1.4
     },
     "buffer_font_features": {
         "calt": true,

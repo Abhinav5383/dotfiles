@@ -25,6 +25,8 @@ export EDITOR=helix
 export ANV_DEBUG="video-decode,video-encode"
 export TERM="xterm-256color"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --strip-cwd-prefix"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
 
 export PATH="$HOME/.platform-tools:$HOME/go/bin:$PATH"
 
