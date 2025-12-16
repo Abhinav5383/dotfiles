@@ -18,7 +18,7 @@ brightnessctl
 chaotic-keyring
 chaotic-mirrorlist
 clang
-cliphist
+clipse
 dosfstools
 efibootmgr
 eza
