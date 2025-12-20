@@ -2,6 +2,10 @@
 
 NOTE FOR MYSELF: add the `snd_soc_sof_es8336.quirk=128` kernel parameter to make sound work.
 
+## Fonts
+
+- [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
+
 ## Packages
 
 ### Base packages
@@ -142,4 +146,3 @@ vlc-plugin-x265
 apple_cursor
 catppuccin-gtk-theme-mocha
 wl-screenrec
-peaclock
