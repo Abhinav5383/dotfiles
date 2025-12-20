@@ -1,7 +1,3 @@
 
-* {
-    font: "Monaspace Neon NF 14";
-}
-
 @theme "./launcher.rasi"
 
