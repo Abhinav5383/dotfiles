@@ -95,7 +95,6 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 yay
 yazi
-zoxide
 zram-generator
 zsh
 

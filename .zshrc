@@ -30,7 +30,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 export PATH="$HOME/.platform-tools:$HOME/go/bin:$PATH"
 
-alias cd="z"
 alias ls="eza -aG --icons --level=1 --group-directories-first"
 alias ll="eza -alT --icons --level=1 --group-directories-last"
 alias hx="helix"
@@ -39,7 +38,6 @@ alias peaclock="peaclock --config-dir ~/.config/peaclock"
 
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
-eval "$(zoxide init zsh)"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
