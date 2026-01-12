@@ -2,13 +2,13 @@
 
 NOTE FOR MYSELF: add the `snd_soc_sof_es8336.quirk=128` kernel parameter to make sound work.
 
-## Fonts
+# Fonts
 
 - [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
 
-## Packages
+# Packages
 
-### Base packages
+## Base packages
 
 7zip
 alsa-utils
@@ -37,7 +37,6 @@ gst-plugin-pipewire
 gtk2
 gtk4
 gvfs-mtp
-helix
 hypridle
 hyprland
 hyprlock
@@ -99,11 +98,10 @@ zram-generator
 zsh
 
 
-### Extras
+## Extras
 
 android-file-transfer
 atuin
-biome
 brave-bin
 btop
 bun-bin
@@ -131,7 +129,7 @@ visual-studio-code-bin
 yt-dlp
 zed
 
-### VLC Stuff
+## VLC Stuff
 vlc
 vlc-plugin-ffmpeg
 vlc-plugin-freetype
@@ -141,7 +139,24 @@ vlc-plugin-srt
 vlc-plugin-x264
 vlc-plugin-x265
 
-### AUR
+## AUR
 apple_cursor
 catppuccin-gtk-theme-mocha
 wl-screenrec
+
+
+## helix setup
+helix
+
+### HTML
+vscode-html-languageserver
+emmet-language-server
+
+### CSS
+vscode-css-languageserver
+tailwind-language-server
+
+### TypeScript
+biome
+typescript
+typescript-language-server
