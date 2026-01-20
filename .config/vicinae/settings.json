@@ -10,11 +10,14 @@
 
 {
    "$schema": "https://vicinae.com/schemas/config.json",
+   "imports": [
+      "./user-settings.json"
+   ],
    "close_on_focus_loss": false,
    "pop_to_root_on_close": true,
    "font": {
       "normal": {
-         "size": 11
+         "size": 12
       }
    },
    "theme": {
@@ -24,7 +27,7 @@
       }
    },
    "launcher_window": {
-      "opacity": 0.98,
+      "opacity": 0.77,
       "client_side_decorations": {
          "enabled": true
       }
