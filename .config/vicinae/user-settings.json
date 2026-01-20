@@ -4,5 +4,6 @@
             "width": 900,
             "height": 560
         }
-    }
+    },
+    "fallbacks": []
 }
