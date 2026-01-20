@@ -22,7 +22,6 @@ brightnessctl
 chaotic-keyring
 chaotic-mirrorlist
 clang
-clipse
 dosfstools
 efibootmgr
 eza
@@ -72,7 +71,6 @@ qt5-wayland
 qt5ct
 qt6-wayland
 qt6ct-kde
-rofi
 rust
 satty
 sof-firmware
@@ -123,8 +121,8 @@ reflector
 rsync
 stremio
 tldr
+vicinae
 valkey
-ventoy-bin
 visual-studio-code-bin
 yt-dlp
 zed
