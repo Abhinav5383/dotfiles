@@ -67,6 +67,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+playerctl
 qt5-wayland
 qt5ct
 qt6-wayland

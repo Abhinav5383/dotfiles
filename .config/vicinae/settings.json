@@ -27,7 +27,7 @@
       }
    },
    "launcher_window": {
-      "opacity": 0.77,
+      "opacity": 1,
       "client_side_decorations": {
          "enabled": true
       }
@@ -40,6 +40,11 @@
                "/var/lib/flatpak/exports/share/applications",
                "/usr/share/applications"
             ]
+         },
+         "entrypoints": {
+            "blueman-manager": {
+               "alias": "bt"
+            }
          }
       },
       "clipboard": {
