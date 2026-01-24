@@ -102,6 +102,9 @@
       },
       "power": {
          "entrypoints": {
+            "hibernate": {
+               "enabled": false
+            },
             "lock": {
                "enabled": true
             },
