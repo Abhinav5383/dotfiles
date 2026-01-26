@@ -36,12 +36,8 @@ alias hx="helix"
 alias shx="sudo -E helix"
 alias peaclock="peaclock --config-dir ~/.config/peaclock"
 
-eval "$(starship init zsh)"
-eval "$(atuin init zsh)"
-
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 
 # Control keys remap
 autoload zkbd
@@ -59,3 +55,6 @@ source ${ZDOTDIR:-$HOME}/.zkbd/xterm-kitty-:0
 [[ -n ${key[Left]} ]] && bindkey "${key[Left]}" backward-char
 [[ -n ${key[Down]} ]] && bindkey "${key[Down]}" down-line-or-search
 [[ -n ${key[Right]} ]] && bindkey "${key[Right]}" forward-char
+
+eval "$(starship init zsh)"
+eval "$(atuin init zsh)"
