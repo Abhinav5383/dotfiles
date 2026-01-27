@@ -34,7 +34,6 @@ alias ls="eza -aG --icons --level=1 --group-directories-first"
 alias ll="eza -alT --icons --level=1 --group-directories-last"
 alias hx="helix"
 alias shx="sudo -E helix"
-alias peaclock="peaclock --config-dir ~/.config/peaclock"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
