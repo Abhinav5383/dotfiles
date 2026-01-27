@@ -1,6 +1,6 @@
 # Hyprland dotfiles
 
-NOTE FOR MYSELF: add the `snd_soc_sof_es8336.quirk=128` kernel parameter to make sound work.
+NOTE FOR MYSELF: add the `options snd_soc_sof_es8336 quirk=128` kernel parameter to make sound work. (`/etc/modprobe.d/speaker-fix.conf`)
 
 # Fonts
 
@@ -147,15 +147,15 @@ wl-screenrec
 ## helix setup
 helix
 
-### HTML
-vscode-html-languageserver
-emmet-language-server
+- **HTML** \
+    vscode-html-languageserver
+    emmet-language-server
 
-### CSS
-vscode-css-languageserver
-tailwind-language-server
+- **CSS** \
+    vscode-css-languageserver
+    tailwind-language-server
 
-### TypeScript
-biome
-typescript
-typescript-language-server
+- **TypeScript** \
+    biome
+    typescript
+    typescript-language-server
