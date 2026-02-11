@@ -25,10 +25,12 @@ export EDITOR=helix
 export ANV_DEBUG="video-decode,video-encode"
 export TERM="xterm-256color"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --strip-cwd-prefix"
+
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_MENU_PREFIX="arch-"
 
-export PATH="$HOME/.platform-tools:$HOME/go/bin:$PATH"
+export PATH="$HOME/.platform-tools:$HOME/.local/bin:$HOME/go/bin:$PATH"
 
 alias ls="eza -aG --icons --level=1 --group-directories-first"
 alias ll="eza -alT --icons --level=1 --group-directories-last"

@@ -44,6 +44,9 @@
          "entrypoints": {
             "blueman-manager": {
                "alias": "bt"
+            },
+            "vlc": {
+               "alias": "vlc"
             }
          }
       },
