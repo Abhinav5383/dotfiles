@@ -22,6 +22,7 @@ bindkey -e
 
 
 export EDITOR=helix
+export MANPAGER="bat -plman"
 export ANV_DEBUG="video-decode,video-encode"
 export TERM="xterm-256color"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --strip-cwd-prefix"
