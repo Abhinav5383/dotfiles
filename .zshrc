@@ -21,18 +21,30 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 
+export PATH="$HOME/.platform-tools:$HOME/.local/bin:$HOME/go/bin:$PATH"
+
+# Misc
 export EDITOR=helix
 export MANPAGER="bat -plman"
 export ANV_DEBUG="video-decode,video-encode"
 export TERM="xterm-256color"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --strip-cwd-prefix"
 
+
+# XDG vars for common directories
+export XDG_MENU_PREFIX="arch-"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
-export XDG_MENU_PREFIX="arch-"
+export XDG_DATA_DIR="$HOME/.local/share"
 
-export PATH="$HOME/.platform-tools:$HOME/.local/bin:$HOME/go/bin:$PATH"
+export XDG_VIDEO_DIR="$HOME/Videos"
+export XDG_MUSIC_DIR="$HOME/Music"
+export XDG_PICTURES_DIR="$HOME/Pictures"
+export XDG_DOCUMENTS_DIR="$HOME/Documents"
+export XDG_DOWNLOAD_DIR="$HOME/Downloads"
 
+
+# Aliases
 alias ls="eza -aG --icons --level=1 --group-directories-first"
 alias ll="eza -alT --icons --level=1 --group-directories-last"
 alias hx="helix"
@@ -58,5 +70,7 @@ source ${ZDOTDIR:-$HOME}/.zkbd/xterm-kitty-:0
 [[ -n ${key[Down]} ]] && bindkey "${key[Down]}" down-line-or-search
 [[ -n ${key[Right]} ]] && bindkey "${key[Right]}" forward-char
 
+
+###
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
