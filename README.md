@@ -45,6 +45,7 @@ hyprpolkitagent
 intel-gpu-tools
 intel-media-driver
 intel-ucode
+iwd
 kitty
 kvantum
 kvantum-qt5
