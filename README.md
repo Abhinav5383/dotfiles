@@ -159,3 +159,28 @@ helix
     biome
     typescript
     typescript-language-server
+
+
+## Speaker fix
+
+1. create a symlink to the dkms folder in `/usr/src` folder
+```sh
+sudo ln -s /home/abhinav/dotfiles/dkms/es8336-fix /usr/src/sof-es8336-1.0
+```
+
+2. Add the module
+```sh
+sudo dkms add -m sof-es8336 -v 1.0
+```
+
+3. build and install
+```sh
+sudo dkms build -v 1.0 -m sof-es8336
+sudo dkms install -v 1.0 -m sof-es8336
+```
+
+4. Add the driver "quirk"
+`/etc/modprobe.d/speaker-fix.conf`
+```sh
+options snd_soc_sof_es8336 quirk=128
+```
