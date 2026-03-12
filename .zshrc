@@ -25,11 +25,13 @@ export PATH="$HOME/.platform-tools:$HOME/.local/bin:$HOME/go/bin:$PATH"
 
 # Misc
 export EDITOR=helix
-export MANPAGER="bat -plman"
 export ANV_DEBUG="video-decode,video-encode"
 export TERM="xterm-256color"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --strip-cwd-prefix"
 
+# man-pager
+export MANROFFOPT='-c'
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # XDG vars for common directories
 export XDG_MENU_PREFIX="arch-"
