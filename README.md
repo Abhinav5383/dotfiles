@@ -99,7 +99,6 @@ zsh
 
 ## Extras
 
-android-file-transfer
 atuin
 brave-bin
 btop
