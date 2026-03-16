@@ -2,8 +2,8 @@
 
 SINKS=$(pactl list sinks short | awk '{print $2}')
 
-INTERNAL_SPKR=$(printf "$SINKS" | grep alsa) # alsa_output.pci-0000_00_1f.3-platform-sof-essx8336.stereo-fallback
-BT_SPKR=$(printf "$SINKS" | grep blue) # bluez_output.41_42_73_D9_49_73.1
+INTERNAL_SPKR=$(printf "$SINKS" | grep alsa)
+BT_SPKR=$(printf "$SINKS" | grep blue)
 
 DELAY_MS=340
 DELAYED_SINK="delayed_sink"
