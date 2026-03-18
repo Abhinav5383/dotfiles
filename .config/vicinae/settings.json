@@ -26,6 +26,9 @@
          "icon_theme": "Hatter"
       }
    },
+   "telemetry": {
+      "system_info": false
+   },
    "launcher_window": {
       "opacity": 1,
       "client_side_decorations": {
@@ -50,6 +53,24 @@
             }
          }
       },
+      "browser-extension": {
+         "enabled": false,
+         "entrypoints": {
+            "browse-tabs": {
+               "enabled": true
+            },
+            "shortcut-active-tab": {
+               "enabled": true
+            }
+         }
+      },
+      "calculator": {
+         "entrypoints": {
+            "history": {
+               "enabled": true
+            }
+         }
+      },
       "clipboard": {
          "preferences": {
             "monitoring": true
@@ -71,10 +92,22 @@
             "documentation": {
                "enabled": false
             },
+            "keybind-settings": {
+               "enabled": false
+            },
+            "list-extensions": {
+               "enabled": false
+            },
             "manage-fallback": {
                "enabled": false
             },
             "oauth-token-store": {
+               "enabled": false
+            },
+            "open-config-file": {
+               "enabled": false
+            },
+            "open-default-config": {
                "enabled": false
             },
             "refresh-apps": {
@@ -86,10 +119,16 @@
             "report-bug": {
                "enabled": false
             },
+            "search-emojis": {
+               "enabled": false
+            },
             "settings": {
                "enabled": false
             },
             "sponsor": {
+               "enabled": false
+            },
+            "store": {
                "enabled": false
             }
          }
@@ -109,10 +148,13 @@
                "enabled": false
             },
             "lock": {
-               "enabled": true
+               "enabled": false
             },
             "logout": {
                "enabled": false
+            },
+            "sleep": {
+               "enabled": true
             },
             "soft-reboot": {
                "enabled": false
