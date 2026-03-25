@@ -4,6 +4,9 @@ theme = "catppuccin_mocha"
 bufferline = "multiple"
 auto-format = false
 
+[editor.lsp]
+auto-signature-help = false
+
 [editor.cursor-shape]
 insert = "bar"
 
