@@ -15,7 +15,9 @@
    ],
    "close_on_focus_loss": true,
    "pop_to_root_on_close": true,
+   "favicon_service": "none",
    "font": {
+      "rendering": "qt",
       "normal": {
          "size": 12
       }
@@ -119,6 +121,9 @@
             "report-bug": {
                "enabled": false
             },
+            "search-builtin-icons": {
+               "enabled": false
+            },
             "search-emojis": {
                "enabled": false
             },
@@ -141,6 +146,9 @@
          "preferences": {
             "autoIndexing": false
          }
+      },
+      "manage-shortcuts": {
+         "enabled": false
       },
       "power": {
          "entrypoints": {
