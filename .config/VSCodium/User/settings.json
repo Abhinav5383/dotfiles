@@ -70,5 +70,7 @@
 	},
 	"[tailwindcss]": {
 		"editor.defaultFormatter": "vscode.css-language-features"
-	}
+	},
+	"breadcrumbs.enabled": false,
+	"terminal.integrated.initialHint": false
 }

@@ -37,6 +37,7 @@
          "enabled": true
       }
    },
+   "favorites": [],
    "providers": {
       "applications": {
          "preferences": {
@@ -52,6 +53,9 @@
             },
             "vlc": {
                "alias": "vlc"
+            },
+            "vscodium-wayland": {
+               "alias": "code"
             }
          }
       },
@@ -75,14 +79,17 @@
       },
       "clipboard": {
          "preferences": {
-            "monitoring": true
+            "monitoring": true,
+            "encryption": true,
+            "eraseOnStartup": false,
+            "ignorePasswords": true
          },
          "entrypoints": {
             "clear": {
                "enabled": true
             },
             "history": {
-               "alias": "clip"
+               "enabled": true
             }
          }
       },
