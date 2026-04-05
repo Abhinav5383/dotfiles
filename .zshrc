@@ -21,7 +21,7 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 
-export PATH="$HOME/portable-bin/fakebin:$HOME/.platform-tools:$HOME/.local/bin:$HOME/go/bin:$PATH"
+export PATH="$HOME/.platform-tools:$HOME/.local/bin:$HOME/go/bin:$PATH"
 
 # Misc
 export EDITOR=helix
