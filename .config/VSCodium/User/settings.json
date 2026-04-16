@@ -63,13 +63,13 @@
 		}
 	},
 	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[css]": {
-		"editor.defaultFormatter": "vscode.css-language-features"
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[tailwindcss]": {
-		"editor.defaultFormatter": "vscode.css-language-features"
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"breadcrumbs.enabled": false,
 	"terminal.integrated.initialHint": false,
