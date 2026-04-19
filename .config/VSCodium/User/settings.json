@@ -33,7 +33,6 @@
 	"editor.stickyScroll.enabled": false,
 	"terminal.integrated.stickyScroll.enabled": false,
 	"editor.cursorSmoothCaretAnimation": "on",
-	"workbench.statusBar.visible": false,
 	"window.customMenuBarAltFocus": false,
 
 	// behaviour defaults
@@ -73,5 +72,6 @@
 	},
 	"breadcrumbs.enabled": false,
 	"terminal.integrated.initialHint": false,
-	"diffEditor.ignoreTrimWhitespace": true
+	"diffEditor.ignoreTrimWhitespace": true,
+	"workbench.statusBar.visible": false
 }
