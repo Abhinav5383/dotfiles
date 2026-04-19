@@ -99,6 +99,7 @@ zsh
 
 ## Extras
 
+aria2
 atuin
 brave-bin
 btop
@@ -107,10 +108,10 @@ chromium
 fastfetch
 flatpak
 go
+gpu-screen-recorder
 grim
 gthumb
-heroic-games-launcher-bin
-jdk24-openjdk
+jre-openjdk
 man-db
 man-pages
 nautilus
@@ -145,7 +146,6 @@ vlc-plugin-x265
 ## AUR
 apple_cursor
 catppuccin-gtk-theme-mocha
-wl-screenrec
 
 
 ## helix setup
