@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 SAVE_DIR="$HOME/Pictures/Screenshots"
 
