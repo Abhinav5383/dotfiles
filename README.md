@@ -31,7 +31,6 @@ gdb
 git
 github-cli
 gnome-keyring
-grim
 gst-plugin-pipewire
 gtk2
 gtk4
@@ -108,6 +107,8 @@ chromium
 fastfetch
 flatpak
 go
+grim
+gthumb
 heroic-games-launcher-bin
 jdk24-openjdk
 man-db
@@ -120,7 +121,10 @@ python-pillow
 qbittorrent
 reflector
 rsync
+slurp
 stremio
+tesseract
+tesseract-data-eng
 tldr
 vicinae
 valkey
