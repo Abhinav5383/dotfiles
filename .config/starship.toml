@@ -3,22 +3,21 @@ add_newline = true
 format = """\
   $directory\
   $git_branch\
-  [\uE0B0](bg:#00000000 fg:#89B5FB)\
+  [\uE0B0](bg:#00000000 fg:#89b4fa)\
   \n$character\n\n\n
 """
 
 continuation_prompt = '▶▶ '
 
-#NOTE: you can customize the symbol(s), e.g:
-# [character]
-# success_symbol = "[  ]($bold fg:#f8f8f2)"
-# error_symbol = "[ ➤ ]($bold fg:#fb4934)"
+[character]
+success_symbol = "[❯]($bold fg:#89b4fa)"
+error_symbol = "[❯]($bold fg:#f38ba8)"
 
 [directory]
 disabled = false
-format = "[ $path ](fg:#181825 bg:#89B5FB)"
+format = "[ $path ](fg:#181825 bg:#89b4fa)"
 truncate_to_repo = false
 
 [git_branch]
-format = "[  $branch ](fg:#181825 bg:#89B5FB)"
+format = "[  $branch ](fg:#181825 bg:#89b4fa)"
 
