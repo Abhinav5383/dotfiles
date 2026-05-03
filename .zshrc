@@ -61,7 +61,6 @@ autoload zkbd
 source ${ZDOTDIR:-$HOME}/.zkbd/xterm-kitty-:0
 
 [[ -n ${key[Backspace]} ]] && bindkey "${key[Backspace]}" backward-delete-char
-[[ -n ${key[Insert]} ]] && bindkey "${key[Insert]}" overwrite-mode
 [[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
 [[ -n ${key[PageUp]} ]] && bindkey "${key[PageUp]}" up-line-or-history
 [[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
