@@ -36,10 +36,10 @@
 	"window.customMenuBarAltFocus": false,
 
 	// behaviour defaults
+	"extensions.autoUpdate": false,
 	"workbench.editor.languageDetection": false,
 	"editor.defaultFormatter": "biomejs.biome",
 	"notebook.defaultFormatter": "biomejs.biome",
-	"extensions.autoUpdate": false,
 
 	// lsps
 	"editor.codeActionsOnSave": {
@@ -47,29 +47,18 @@
 		"source.removeUnusedImports": "always"
 	},
 
-	"[json]": {
+	"[json][jsonc][html][css][tailwindcss][javascript][javascriptreact][typescript][typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+
+	"[json][jsonc]": {
 		"editor.suggest.insertMode": "replace",
 		"editor.defaultFormatter": "biomejs.biome",
 		"editor.quickSuggestions": {
 			"strings": true
 		}
 	},
-	"[jsonc]": {
-		"editor.suggest.insertMode": "replace",
-		"editor.defaultFormatter": "biomejs.biome",
-		"editor.quickSuggestions": {
-			"strings": true
-		}
-	},
-	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
-	},
-	"[css]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[tailwindcss]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
+
 	"breadcrumbs.enabled": false,
 	"terminal.integrated.initialHint": false,
 	"diffEditor.ignoreTrimWhitespace": true,
