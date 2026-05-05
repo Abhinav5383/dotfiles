@@ -47,7 +47,8 @@ export XDG_DOWNLOAD_DIR="$HOME/Downloads"
 
 
 # Aliases
-alias ls="eza -aG --icons --level=1 --group-directories-first"
+alias ls="eza -G --icons --level=1 --group-directories-first"
+alias lsa="ls -a"
 alias ll="eza -alT --icons --level=1 --group-directories-last"
 alias hx="helix"
 alias shx="sudo -E helix"
