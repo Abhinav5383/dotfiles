@@ -23,6 +23,9 @@ bindkey -e
 
 export PATH="$HOME/.platform-tools:$HOME/.local/bin:$HOME/go/bin:$PATH"
 
+export GTK_USE_PORTAL=1
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
+
 # Misc
 export EDITOR=helix
 export ANV_DEBUG="video-decode,video-encode"
