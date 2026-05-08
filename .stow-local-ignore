@@ -7,3 +7,5 @@ sync-cfg.sh
 dkms
 
 .config/mimeapps.list
+
+.luarc.json
