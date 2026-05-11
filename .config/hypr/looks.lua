@@ -1,12 +1,3 @@
--- monitor
-
-hl.monitor({
-  output = "",
-  mode = "preferred",
-  position = "auto",
-  scale = "1.2"
-})
-
 hl.config({
   general = {
     gaps_in = 0,
@@ -43,8 +34,7 @@ hl.config({
 
   misc = {
     force_default_wallpaper = 0,
-    disable_hyprland_logo = true,
-    vfr = true
+    disable_hyprland_logo = true
   },
 
   xwayland = {

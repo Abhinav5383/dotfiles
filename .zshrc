@@ -59,8 +59,8 @@ alias hx="helix"
 alias shx="sudo -E helix"
 
 # shortcuts
-alias wifi-rescan="nmcli device wifi rescan"
-alias wifi-connect="nmcli device wifi rescan && nmcli connection up"
+alias rescan-wifi="nmcli device wifi rescan"
+alias connect-wifi="nmcli device wifi rescan && nmcli connection up"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

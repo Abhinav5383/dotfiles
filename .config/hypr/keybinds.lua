@@ -6,7 +6,7 @@ local browser = "brave"
 local mainMod = "SUPER"
 local scripts = "~/.config/hypr/scripts"
 
-hl.bind(           "Ctrl + Q",     hl.dsp.window.close())
+hl.bind(           "CTRL + Q",     hl.dsp.window.close())
 hl.bind(mainMod .. " + W",         hl.dsp.window.float({ action = "toggle" }), { dont_inhibit = true })
 
 hl.bind(mainMod .. " + T",         hl.dsp.exec_cmd(terminal))
@@ -15,7 +15,7 @@ hl.bind(mainMod .. " + C",         hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + E",         hl.dsp.exec_cmd(fileManager))
 
 hl.bind(mainMod .. " + Space",     hl.dsp.exec_cmd("vicinae toggle"))
-hl.bind(           "Alt + Space",  hl.dsp.exec_cmd("vicinae toggle"))
+hl.bind(           "ALT + Space",  hl.dsp.exec_cmd("vicinae toggle"))
 hl.bind(mainMod .. " + V",         hl.dsp.exec_cmd("vicinae deeplink vicinae://extensions/vicinae/clipboard/history"))
 hl.bind(mainMod .. " + period",    hl.dsp.exec_cmd("vicinae deeplink vicinae://extensions/vicinae/core/search-emojis"))
 hl.bind(mainMod .. " + N",         hl.dsp.exec_cmd("swaync-client -t -sw"))
