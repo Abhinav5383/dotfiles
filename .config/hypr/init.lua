@@ -5,6 +5,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("hypridle")
   hl.exec_cmd("hyprpaper")
   hl.exec_cmd("~/.config/hypr/scripts/on-low-battery.sh")
+  hl.exec_cmd("vicinae server --replace --no-extension-runtime")
 
   -- gtk theme
   hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme \"catppuccin-mocha-mauve-standard+default\"")
