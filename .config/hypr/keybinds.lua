@@ -8,6 +8,7 @@ local scripts = "~/.config/hypr/scripts"
 
 hl.bind(           "CTRL + Q",     hl.dsp.window.close())
 hl.bind(mainMod .. " + W",         hl.dsp.window.float({ action = "toggle" }), { dont_inhibit = true })
+-- hl.bind(mainMod .. " + W",         hl.dsp.window.)
 
 hl.bind(mainMod .. " + T",         hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + B",         hl.dsp.exec_cmd(browser))
@@ -36,8 +37,8 @@ hl.bind(mainMod .. " + left",      hl.dsp.focus({ direction = "left" }))
 
 for i = 1, 10 do
     local key = i % 10
-    hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i}))
-    hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
+    hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i}), { dont_inhibit = true })
+    hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }), { dont_inhibit = true })
 end
 
 hl.bind(mainMod .. " + S",          hl.dsp.workspace.toggle_special("magic"))
