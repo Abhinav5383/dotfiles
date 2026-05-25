@@ -47,7 +47,12 @@
 		"source.removeUnusedImports": "always"
 	},
 
-	"[json][jsonc][html][css][tailwindcss][javascript][javascriptreact][typescript][typescriptreact]": {
+	"[html]": {
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+
+	"[json][jsonc][css][tailwindcss][javascript][javascriptreact][typescript][typescriptreact]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 
