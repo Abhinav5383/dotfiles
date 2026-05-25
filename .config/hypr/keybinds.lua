@@ -17,8 +17,8 @@ hl.bind(mainMod .. " + E",         hl.dsp.exec_cmd(fileManager))
 
 hl.bind(mainMod .. " + Space",     hl.dsp.exec_cmd("vicinae toggle"))
 hl.bind(           "ALT + Space",  hl.dsp.exec_cmd("vicinae toggle"))
-hl.bind(mainMod .. " + V",         hl.dsp.exec_cmd("vicinae deeplink vicinae://extensions/vicinae/clipboard/history"))
-hl.bind(mainMod .. " + period",    hl.dsp.exec_cmd("vicinae deeplink vicinae://extensions/vicinae/core/search-emojis"))
+hl.bind(mainMod .. " + V",         hl.dsp.exec_cmd("vicinae deeplink vicinae://launch/clipboard/history"))
+hl.bind(mainMod .. " + period",    hl.dsp.exec_cmd("vicinae deeplink vicinae://launch/core/search-emojis"))
 hl.bind(mainMod .. " + N",         hl.dsp.exec_cmd("swaync-client -t -sw"))
 
 hl.bind(mainMod .. " + L",         hl.dsp.exec_cmd("hyprlock"))
