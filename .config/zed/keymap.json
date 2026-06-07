@@ -6,14 +6,8 @@
             "alt-shift-down": "editor::DuplicateLineDown",
             "ctrl-shift-up": "editor::AddSelectionAbove", // Insert Cursor Above
             "ctrl-shift-down": "editor::AddSelectionBelow", // Insert Cursor Below
-            "ctrl-alt-shift-down": [
-                "editor::SelectNext",
-                { "replace_newest": false }
-            ], // editor.action.addSelectionToNextFindMatch
-            "ctrl-alt-shift-up": [
-                "editor::SelectPrevious",
-                { "replace_newest": false }
-            ] // editor.action.addSelectionToPreviousFindMatch
+            "ctrl-alt-shift-down": ["editor::SelectNext", { "replace_newest": false }], // editor.action.addSelectionToNextFindMatch
+            "ctrl-alt-shift-up": ["editor::SelectPrevious", { "replace_newest": false }] // editor.action.addSelectionToPreviousFindMatch
         }
     }
 ]
