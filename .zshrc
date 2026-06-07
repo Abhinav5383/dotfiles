@@ -48,7 +48,7 @@ export XDG_PICTURES_DIR="$HOME/Pictures"
 export XDG_DOCUMENTS_DIR="$HOME/Documents"
 export XDG_DOWNLOAD_DIR="$HOME/Downloads"
 
-export BIOME_CONFIG_PATH="$HOME/.config/biome"
+# export BIOME_CONFIG_PATH="$HOME/.config/biome"
 
 
 # Aliases

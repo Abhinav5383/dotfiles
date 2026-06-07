@@ -6,6 +6,12 @@ local browser = "brave"
 local mainMod = "SUPER"
 local scripts = "~/.config/hypr/scripts"
 
+hl.config({
+    input = {
+        kb_options = "caps:escape_shifted_capslock"
+    }
+})
+
 hl.bind(           "CTRL + Q",     hl.dsp.window.close())
 hl.bind(mainMod .. " + W",         hl.dsp.window.float({ action = "toggle" }), { dont_inhibit = true })
 -- hl.bind(mainMod .. " + W",         hl.dsp.window.)

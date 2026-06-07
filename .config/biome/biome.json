@@ -13,6 +13,7 @@
 	},
 	"formatter": {
 		"lineWidth": 120,
-		"indentStyle": "tab"
+		"indentStyle": "space",
+		"indentWidth": 4
 	}
 }
