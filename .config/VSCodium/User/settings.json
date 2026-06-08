@@ -72,5 +72,8 @@
     "[c]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
-    "editor.acceptSuggestionOnCommitCharacter": false
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "files.associations": {
+        "*.css": "tailwindcss"
+    }
 }
