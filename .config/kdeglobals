@@ -5,7 +5,12 @@ TerminalApplication=kitty
 Theme=HatterPurple
 
 [KDE]
+ShowDeleteCommand=false
 widgetStyle=qt6ct-style
 
 [KShortcutsDialog Settings]
 Dialog Size=612,480
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
