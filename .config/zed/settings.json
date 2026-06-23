@@ -1,33 +1,44 @@
 {
-    "diff_view_style": "split",
-    "disable_ai": true,
+    "diff_view_style": "unified",
+    "disable_ai": false,
     "sticky_scroll": {
-        "enabled": false
+        "enabled": false,
     },
-    "edit_predictions": {},
+    "edit_predictions": {
+        "allow_data_collection": "no",
+        "provider": "copilot",
+    },
     "project_panel": {
-        "dock": "left"
+        "dock": "left",
     },
     "outline_panel": {
-        "dock": "left"
+        "dock": "left",
     },
     "collaboration_panel": {
-        "dock": "left"
+        "button": false,
     },
     "agent": {
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "gemini-3.1-pro-preview",
+            "enable_thinking": true,
+            "effort": "high"
+        },
+        "sidebar_side": "right",
         "dock": "right",
         "favorite_models": [],
-        "model_parameters": []
+        "model_parameters": [],
     },
     "git_panel": {
-        "dock": "left"
+        "dock": "left",
     },
     "inlay_hints": {
-        "enabled": false
+        "enabled": false,
     },
     "show_edit_predictions": false,
     "base_keymap": "VSCode",
-    "hard_tabs": true,
+    "hard_tabs": false,
+    "tab_size": 4,
     "theme": "Monospace dark",
     "icon_theme": "Material Icon Theme",
     "ui_font_family": "Space Grotesk",
@@ -35,7 +46,7 @@
     "buffer_font_family": "Monaspace Neon NF",
     "buffer_font_size": 18.0,
     "buffer_line_height": {
-        "custom": 1.4
+        "custom": 1.4,
     },
     "buffer_font_features": {
         "calt": true,
@@ -48,98 +59,94 @@
         "ss07": true,
         "ss08": true,
         "ss09": true,
-        "liga": true
+        "liga": true,
     },
     "terminal": {
         "font_size": 16.0,
         "font_family": "Monaspace Neon NF",
         "line_height": {
-            "custom": 1.4
-        }
+            "custom": 1.4,
+        },
     },
     "telemetry": {
         "metrics": false,
-        "diagnostics": false
+        "diagnostics": false,
     },
     "toolbar": {
         "agent_review": false,
         "breadcrumbs": false,
         "quick_actions": false,
-        "selections_menu": false
+        "selections_menu": false,
     },
     "tab_bar": {
-        "show_nav_history_buttons": false
+        "show_nav_history_buttons": false,
     },
     "tabs": {
         "file_icons": true,
-        "git_status": true
+        "git_status": true,
     },
     "minimap": {
-        "show": "never"
+        "show": "never",
     },
-    "tab_size": 4,
     "git": {
         "inline_blame": {
-            "enabled": false
-        }
+            "enabled": false,
+        },
     },
 
     "use_on_type_format": false,
     "code_actions_on_format": {
         "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
+        "source.organizeImports.biome": true,
     },
 
     "languages": {
         "HTML": {
-            "hard_tabs": true,
-            "tab_size": 4,
-            "language_servers": ["vscode-html-language-server", "emmet-language-server", "biome"],
-            "formatter": { "language_server": { "name": "biome" } }
+            "language_servers": [
+                "vscode-html-language-server",
+                "emmet-language-server",
+                "biome",
+            ],
+            "formatter": { "language_server": { "name": "biome" } },
         },
         "JavaScript": {
-            "hard_tabs": true,
-            "tab_size": 4,
             "formatter": { "language_server": { "name": "biome" } },
-            "language_servers": ["vtsls", "biome"]
+            "language_servers": ["vtsls", "biome"],
         },
         "TypeScript": {
-            "hard_tabs": true,
-            "tab_size": 4,
             "formatter": { "language_server": { "name": "biome" } },
-            "language_servers": ["vtsls", "biome"]
+            "language_servers": ["vtsls", "biome"],
         },
         "TSX": {
-            "hard_tabs": true,
-            "tab_size": 4,
             "formatter": { "language_server": { "name": "biome" } },
-            "language_servers": ["vtsls", "tailwindcss-language-server", "emmet-language-server", "biome"]
+            "language_servers": [
+                "vtsls",
+                "tailwindcss-language-server",
+                "emmet-language-server",
+                "biome",
+            ],
         },
         "CSS": {
-            "hard_tabs": true,
-            "tab_size": 4,
             "formatter": { "language_server": { "name": "biome" } },
             "language_servers": [
                 "vscode-css-language-server",
                 "tailwindcss-language-server",
                 "emmet-language-server",
-                "biome"
-            ]
+                "biome",
+            ],
         },
         "JSON": {
-            "hard_tabs": true,
-            "tab_size": 4,
             "formatter": { "language_server": { "name": "biome" } },
-            "language_servers": ["json-language-server", "biome"]
-        }
+            "language_servers": ["json-language-server", "biome"],
+        },
     },
 
     "lsp": {
         "biome": {
             "binary": {
                 "path": "/usr/bin/biome",
-                "arguments": ["lsp-proxy"]
-            }
-        }
-    }
+                "arguments": ["lsp-proxy"],
+            },
+        },
+    },
 }

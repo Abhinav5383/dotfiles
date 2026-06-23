@@ -105,13 +105,6 @@ hl.window_rule({
   match = { class = "(xdg-desktop-portal-gtk|hyprland-share-picker)" },
   float = true,
   center = true,
-  size = { "monitor_w * 0.7", "monitor_h * 0.7" }
-})
-
-hl.window_rule({
-  match = { class = "xdg-desktop-portal-gtk" },
-  float = true,
-  center = true,
   size = { "monitor_w * 0.75", "monitor_h * 0.75" }
 })
 
