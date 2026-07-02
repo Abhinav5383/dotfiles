@@ -30,3 +30,7 @@ sudo dkms build -m es8336-fix -v 1.0
 ```sh
 sudo dkms install -m es8336-fix -v 1.0
 ```
+
+> [!NOTE]
+> If you have multiple kernels installed and you often hop between them then you will need to install the dkms for each kernel. \
+> Add an additional argument `-k` specifying the kernel name (e.g: `-k 7.0.14-arch1-1 `) and repeat the above three commands for each kernel.
