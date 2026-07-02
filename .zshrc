@@ -20,6 +20,8 @@ setopt autocd notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
+export TERM="xterm-256color"
+
 # Aliases
 alias ls="eza -G --icons --level=1 --group-directories-first"
 alias lsa="ls -a"

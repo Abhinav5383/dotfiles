@@ -1,4 +1,5 @@
 {
+    "cli_default_open_behavior": "existing_window",
     "diff_view_style": "unified",
     "disable_ai": false,
     "sticky_scroll": {
@@ -14,15 +15,12 @@
     "outline_panel": {
         "dock": "left",
     },
-    "collaboration_panel": {
-        "button": false,
-    },
     "agent": {
         "default_model": {
             "provider": "copilot_chat",
             "model": "gemini-3.1-pro-preview",
             "enable_thinking": true,
-            "effort": "high"
+            "effort": "high",
         },
         "sidebar_side": "right",
         "dock": "right",
@@ -35,7 +33,7 @@
     "inlay_hints": {
         "enabled": false,
     },
-    "show_edit_predictions": false,
+    "show_edit_predictions": true,
     "base_keymap": "VSCode",
     "hard_tabs": false,
     "tab_size": 4,
@@ -100,6 +98,7 @@
         "source.organizeImports.biome": true,
     },
 
+    "format_on_save": "off",
     "languages": {
         "HTML": {
             "language_servers": [
@@ -107,7 +106,7 @@
                 "emmet-language-server",
                 "biome",
             ],
-            "formatter": { "language_server": { "name": "biome" } },
+            "formatter": { "language_server": { "name": "vscode-html-language-server" } },
         },
         "JavaScript": {
             "formatter": { "language_server": { "name": "biome" } },
@@ -138,6 +137,10 @@
         "JSON": {
             "formatter": { "language_server": { "name": "biome" } },
             "language_servers": ["json-language-server", "biome"],
+        },
+        "SCSS": {
+            "formatter": "none",
+            "language_servers": ["biome", "scss-lsp"],
         },
     },
 
