@@ -26,3 +26,11 @@ if [ "$MEDIA_STATE" = "Playing" ]; then
   sleep 0.5
   playerctl play
 fi
+
+
+# unmute the 'Headphone' to prevent muting/unmuting from killing the speakers' audio
+CARD_INDEX="$(printf '%s\n' "$CARD_INFO" \
+    | awk -F'"' '/api\.alsa\.card =/ { print $2 }')"
+
+amixer -c "$CARD_INDEX" sset 'Headphone' cap unmute 1>/dev/null
+
