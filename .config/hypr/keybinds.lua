@@ -43,9 +43,15 @@ hl.bind(mainMod .. " + left",      hl.dsp.focus({ direction = "left" }))
 
 for i = 1, 10 do
     local key = i % 10
-    hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i}), { dont_inhibit = true })
+    hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i }), { dont_inhibit = true })
     hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }), { dont_inhibit = true })
 end
+
+hl.bind(mainMod .. " + minus",          hl.dsp.focus({ workspace = 11 }), { dont_inhibit = true })
+hl.bind(mainMod .. " + SHIFT + minus",  hl.dsp.window.move({ workspace = 11 }), { dont_inhibit = true })
+
+hl.bind(mainMod .. " + equal",          hl.dsp.focus({ workspace = 12 }), { dont_inhibit = true })
+hl.bind(mainMod .. " + SHIFT + equal",  hl.dsp.window.move({ workspace = 12 }), { dont_inhibit = true })
 
 hl.bind(mainMod .. " + S",          hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S",  hl.dsp.window.move({ workspace = "special:magic" }))
