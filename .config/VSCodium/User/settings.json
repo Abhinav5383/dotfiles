@@ -46,6 +46,7 @@
         "source.organizeImports": "always",
         "source.removeUnusedImports": "always"
     },
+    "biome.lsp.bin": "/usr/bin/biome",
 
     "[html]": {
         "editor.suggest.insertMode": "replace",

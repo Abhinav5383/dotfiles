@@ -110,16 +110,16 @@
         },
         "JavaScript": {
             "formatter": { "language_server": { "name": "biome" } },
-            "language_servers": ["vtsls", "biome"],
+            "language_servers": ["tsgo", "biome"],
         },
         "TypeScript": {
             "formatter": { "language_server": { "name": "biome" } },
-            "language_servers": ["vtsls", "biome"],
+            "language_servers": ["tsgo", "biome"],
         },
         "TSX": {
             "formatter": { "language_server": { "name": "biome" } },
             "language_servers": [
-                "vtsls",
+                "tsgo",
                 "tailwindcss-language-server",
                 "emmet-language-server",
                 "biome",
