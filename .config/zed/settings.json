@@ -1,13 +1,20 @@
 {
+    "auto_indent": "syntax_aware",
+    "indent_guides": {
+        "background_coloring": "disabled",
+        "coloring": "fixed"
+    },
+    "ensure_final_newline_on_save": false,
+    "remove_trailing_whitespace_on_save": false,
     "cli_default_open_behavior": "existing_window",
     "diff_view_style": "unified",
-    "disable_ai": false,
+    "disable_ai": true,
     "sticky_scroll": {
         "enabled": false,
     },
     "edit_predictions": {
         "allow_data_collection": "no",
-        "provider": "copilot",
+        "provider": "none",
     },
     "project_panel": {
         "dock": "left",
@@ -110,16 +117,17 @@
         },
         "JavaScript": {
             "formatter": { "language_server": { "name": "biome" } },
-            "language_servers": ["tsgo", "biome"],
+            "language_servers": ["vtsls", "biome"],
         },
         "TypeScript": {
             "formatter": { "language_server": { "name": "biome" } },
-            "language_servers": ["tsgo", "biome"],
+            "language_servers": ["vtsls", "biome"],
         },
         "TSX": {
+            "show_edit_predictions": true,
             "formatter": { "language_server": { "name": "biome" } },
             "language_servers": [
-                "tsgo",
+                "vtsls",
                 "tailwindcss-language-server",
                 "emmet-language-server",
                 "biome",
@@ -150,6 +158,6 @@
                 "path": "/usr/bin/biome",
                 "arguments": ["lsp-proxy"],
             },
-        },
+        }
     },
 }

@@ -36,7 +36,7 @@
     "window.customMenuBarAltFocus": false,
 
     // behaviour defaults
-    "extensions.autoUpdate": false,
+    "extensions.autoUpdate": "off",
     "workbench.editor.languageDetection": false,
     "editor.defaultFormatter": "biomejs.biome",
     "notebook.defaultFormatter": "biomejs.biome",
