@@ -25,3 +25,7 @@ export XDG_PICTURES_DIR="$HOME/Pictures"
 export XDG_DOCUMENTS_DIR="$HOME/Documents"
 export XDG_DOWNLOAD_DIR="$HOME/Downloads"
 
+
+# difft config
+export DFT_IGNORE_COMMENTS="true"
+export DFT_DISPLAY="inline"

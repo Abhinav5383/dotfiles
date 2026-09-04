@@ -17,10 +17,10 @@
     "editor.detectIndentation": false,
 
     // fonts and themes
-    "editor.fontFamily": "Monaspace Neon NF",
-    "terminal.integrated.fontFamily": "Monaspace Neon NF",
-    "editor.inlineSuggest.fontFamily": "Monaspace Krypton NF",
-    "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontLigatures": "'calt'",
     "terminal.integrated.fontLigatures.enabled": true,
     "terminal.integrated.fontSize": 16,
     "editor.fontSize": 15,
@@ -42,10 +42,10 @@
     "notebook.defaultFormatter": "biomejs.biome",
 
     // lsps
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": "always",
-        "source.removeUnusedImports": "always"
-    },
+    // "editor.codeActionsOnSave": {
+    //     "source.organizeImports": "always",
+    //     "source.removeUnusedImports": "always"
+    // },
     "biome.lsp.bin": "/usr/bin/biome",
 
     "[html]": {
@@ -68,7 +68,6 @@
     "breadcrumbs.enabled": false,
     "terminal.integrated.initialHint": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.statusBar.visible": false,
     "explorer.confirmPasteNative": false,
     "[c]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
@@ -77,5 +76,6 @@
     "files.associations": {
         "*.css": "tailwindcss"
     },
-    "diffEditor.renderSideBySide": true
+    "diffEditor.renderSideBySide": true,
+    "workbench.tree.stickyScrollMaxItemCount": 5
 }
