@@ -114,6 +114,8 @@ gthumb
 jre-openjdk
 man-db
 man-pages
+mpd
+mpd-mpris
 nautilus
 ncdu
 pavucontrol
@@ -121,6 +123,7 @@ pm2
 python-pillow
 qbittorrent
 reflector
+rmpc
 rsync
 slurp
 stremio
