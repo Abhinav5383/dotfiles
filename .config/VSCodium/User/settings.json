@@ -77,5 +77,7 @@
         "*.css": "tailwindcss"
     },
     "diffEditor.renderSideBySide": true,
-    "workbench.tree.stickyScrollMaxItemCount": 5
+    "workbench.tree.stickyScrollMaxItemCount": 5,
+    "workbench.statusBar.visible": false,
+    "js/ts.experimental.useTsgo": true
 }
