@@ -26,7 +26,8 @@
         "mpris": {
             "image-size": 96,
             "image-radius": 12,
-            "blacklist": ["playerctld"]
+            "blacklist": ["playerctld"],
+            "autohide": true
         }
     }
 }

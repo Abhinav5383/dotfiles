@@ -28,6 +28,7 @@ alias lsa="ls -a"
 alias ll="eza -alT --icons --level=1 --group-directories-last"
 alias hx="helix"
 alias shx="sudo -E helix"
+alias rmpc="~/scripts/rmpc-wrap.sh"
 
 # shortcuts
 alias rescan-wifi="nmcli device wifi rescan"
