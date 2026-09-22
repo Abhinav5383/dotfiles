@@ -162,6 +162,9 @@
       "manage-shortcuts": {
          "enabled": false
       },
+      "media": {
+         "enabled": false
+      },
       "power": {
          "entrypoints": {
             "hibernate": {

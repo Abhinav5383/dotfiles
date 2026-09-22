@@ -45,6 +45,7 @@ intel-gpu-tools
 intel-media-driver
 intel-ucode
 iwd
+jq
 kitty
 kvantum
 kvantum-qt5
