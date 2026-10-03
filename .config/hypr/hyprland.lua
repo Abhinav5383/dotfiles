@@ -1,4 +1,4 @@
-require("init")
-require("looks")
-require("devices")
-require("keybinds")
+require("wm/init")
+require("wm/looks")
+require("wm/devices")
+require("wm/keybinds")
