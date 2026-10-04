@@ -50,6 +50,8 @@
 #define SOF_ES8336_JD_INVERTED			BIT(6)
 #define SOF_ES8336_HEADPHONE_GPIO		BIT(7)
 #define SOC_ES8336_HEADSET_MIC1			BIT(8)
+#define SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED	BIT(9)
+#define SOF_ES8336_DISABLE_DMIC			BIT(10)
 
 static unsigned long quirk;
 
@@ -106,6 +108,8 @@ static void log_quirks(struct device *dev)
 		dev_info(dev, "Speakers GPIO1 quirk enabled\n");
 	if (quirk & SOF_ES8336_HEADPHONE_GPIO)
 		dev_info(dev, "quirk headphone GPIO enabled\n");
+	if (quirk & SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED)
+		dev_info(dev, "quirk headphone GPIO non-inverted enabled\n");
 	if (quirk & SOF_ES8336_JD_INVERTED)
 		dev_info(dev, "quirk JD inverted enabled\n");
 	if (quirk & SOC_ES8336_HEADSET_MIC1)
@@ -121,6 +125,8 @@ static void pcm_pop_work_events(struct work_struct *work)
 
 	if (quirk & SOF_ES8336_HEADPHONE_GPIO)
 		gpiod_set_value_cansleep(priv->gpio_headphone, !priv->speaker_en);
+	else if (quirk & SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED)
+		gpiod_set_value_cansleep(priv->gpio_headphone, priv->speaker_en);
 
 }
 
@@ -134,16 +140,27 @@ static int sof_8336_trigger(struct snd_pcm_substream *substream, int cmd)
 	case SNDRV_PCM_TRIGGER_START:
 	case SNDRV_PCM_TRIGGER_PAUSE_RELEASE:
 	case SNDRV_PCM_TRIGGER_RESUME:
+		if (priv->speaker_en == false) {
+			if (substream->stream == 0) {
+				queue_delayed_work(system_dfl_wq, &priv->pcm_pop_work,
+						   msecs_to_jiffies(70));
+			}
+		}
 		break;
 
 	case SNDRV_PCM_TRIGGER_PAUSE_PUSH:
 	case SNDRV_PCM_TRIGGER_SUSPEND:
 	case SNDRV_PCM_TRIGGER_STOP:
-		if (priv->speaker_en == false)
+		if (priv->speaker_en == false) {
 			if (substream->stream == 0) {
-				cancel_delayed_work(&priv->pcm_pop_work);
+				cancel_delayed_work_sync(&priv->pcm_pop_work);
 				gpiod_set_value_cansleep(priv->gpio_speakers, true);
+				if (quirk & SOF_ES8336_HEADPHONE_GPIO)
+					gpiod_set_value_cansleep(priv->gpio_headphone, false);
+				else if (quirk & SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED)
+					gpiod_set_value_cansleep(priv->gpio_headphone, true);
 			}
+		}
 		break;
 	default:
 		return -EINVAL;
@@ -342,6 +359,76 @@ static const struct dmi_system_id sof_es8336_quirk_table[] = {
 		},
 		.driver_data = (void *)(SOF_ES8336_HEADPHONE_GPIO |
 					SOF_ES8336_ENABLE_DMIC)
+	},
+	{
+		.callback = sof_es8336_quirk_cb,
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Infinix"),
+			DMI_MATCH(DMI_PRODUCT_NAME, "Infinix INBOOK X2 PLUS"),
+		},
+		.driver_data = (void *)(SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED |
+					SOF_ES8336_DISABLE_DMIC |
+					SOC_ES8336_HEADSET_MIC1)
+	},
+	{
+		.callback = sof_es8336_quirk_cb,
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Infinix"),
+			DMI_MATCH(DMI_PRODUCT_NAME, "Infinix  INBOOK X2"),
+		},
+		.driver_data = (void *)(SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED |
+					SOF_ES8336_DISABLE_DMIC |
+					SOC_ES8336_HEADSET_MIC1)
+	},
+	{
+		.callback = sof_es8336_quirk_cb,
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Infinix"),
+			DMI_MATCH(DMI_PRODUCT_NAME, "INBOOK X2 GEN11"),
+		},
+		.driver_data = (void *)(SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED |
+					SOF_ES8336_DISABLE_DMIC |
+					SOC_ES8336_HEADSET_MIC1)
+	},
+	{
+		.callback = sof_es8336_quirk_cb,
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Infinix"),
+			DMI_MATCH(DMI_PRODUCT_NAME, "Infinix INBOOK X1 SLIM"),
+		},
+		.driver_data = (void *)(SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED |
+					SOF_ES8336_DISABLE_DMIC |
+					SOC_ES8336_HEADSET_MIC1)
+	},
+	{
+		.callback = sof_es8336_quirk_cb,
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Infinix"),
+			DMI_MATCH(DMI_PRODUCT_NAME, "Infinix INBOOK X1 NEO"),
+		},
+		.driver_data = (void *)(SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED |
+					SOF_ES8336_DISABLE_DMIC |
+					SOC_ES8336_HEADSET_MIC1)
+	},
+	{
+		.callback = sof_es8336_quirk_cb,
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Infinix"),
+			DMI_MATCH(DMI_PRODUCT_NAME, "INBOOK Y1 PLUS"),
+		},
+		.driver_data = (void *)(SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED |
+					SOF_ES8336_DISABLE_DMIC |
+					SOC_ES8336_HEADSET_MIC1)
+	},
+	{
+		.callback = sof_es8336_quirk_cb,
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, "Infinix"),
+			DMI_MATCH(DMI_PRODUCT_NAME, "INBOOK Y1 PLUS NEO"),
+		},
+		.driver_data = (void *)(SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED |
+					SOF_ES8336_DISABLE_DMIC |
+					SOC_ES8336_HEADSET_MIC1)
 	},
 	{
 		.callback = sof_es8336_quirk_cb,
@@ -667,6 +754,12 @@ static int sof_es8336_probe(struct platform_device *pdev)
 			 quirk, quirk_override);
 		quirk = quirk_override;
 	}
+
+	if (quirk & SOF_ES8336_DISABLE_DMIC) {
+		mach->mach_params.dmic_num = 0;
+		quirk &= ~SOF_ES8336_ENABLE_DMIC;
+	}
+
 	log_quirks(dev);
 
 	if (quirk & SOF_ES8336_ENABLE_DMIC)
@@ -736,7 +829,7 @@ static int sof_es8336_probe(struct platform_device *pdev)
 	}
 
 	/* get speaker enable GPIO */
-	if (quirk & SOF_ES8336_HEADPHONE_GPIO) {
+	if (quirk & (SOF_ES8336_HEADPHONE_GPIO | SOF_ES8336_HEADPHONE_GPIO_NON_INVERTED)) {
 		if (quirk & SOF_ES8336_SPEAKERS_EN_GPIO1_QUIRK)
 			gpio_mapping = acpi_enable_both_gpios;
 		else
